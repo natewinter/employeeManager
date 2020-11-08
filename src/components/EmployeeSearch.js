@@ -1,6 +1,7 @@
 import React from 'react'
 import EmployeeCard from "./EmployeeCard"
 import API from "../utils/API";
+import SearchBar from "./SearchBar"
 
 export default class EmployeeSearch extends React.Component {
 
@@ -34,6 +35,13 @@ export default class EmployeeSearch extends React.Component {
             <div className="container">
                 <header><h1>Employee Search</h1></header>
                 <hr />
+
+                {/* search button resets page and continues to refresh. prevent default? */}
+                <SearchBar
+                value={this.state.search}
+                handleInputChange={this.handleInputChange}
+                handleFormSubmit={this.handleFormSubmit}
+              />
                 <table className="table">
                 <EmployeeCard results={this.state.employeesArray} />
                 </table>
