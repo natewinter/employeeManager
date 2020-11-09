@@ -9,7 +9,7 @@ function EmployeeCard(props) {
           <th>Name</th>
           <th>Phone Number</th>
           <th>Email</th>
-          <th className="dob" onClick={props.handleFilter}>Age</th>
+          <th className="age" onClick={props.handleFilter}>Age</th>
           <th >D.O.B</th>
         </tr>
           {props.results.map((result,index) => (
