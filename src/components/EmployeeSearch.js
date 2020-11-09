@@ -2,6 +2,7 @@ import React from 'react'
 import EmployeeCard from "./EmployeeCard"
 import API from "../utils/API";
 import SearchBar from "./SearchBar"
+import './App.css';
 
 export default class EmployeeSearch extends React.Component {
 
