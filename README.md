@@ -9,3 +9,5 @@ As an employee or manager would benefit greatly [from being able to view non-sen
 npm i
 
 npm start
+
+![](assets/filename%20image.gif)
