@@ -10,4 +10,4 @@ npm i
 
 npm start
 
-![](assets/filename%20image.gif)
+![](assets/image.gif)
