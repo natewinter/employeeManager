@@ -15,7 +15,6 @@ function Searchbar(props) {
           placeholder="Search For a Last Name"
           id="search"
         />
-        <br />
         <button onClick={props.handleFormSubmit} className="btn btn-primary">
           Search
         </button>

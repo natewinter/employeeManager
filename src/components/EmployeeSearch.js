@@ -30,8 +30,8 @@ export default class EmployeeSearch extends React.Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        const filterResults = this.state.results.filter(res => (res.name.last === this.state.search))
-        this.setState({results:filterResults})
+        const searchResults = this.state.results.filter(res => (res.name.last.toLowerCase() === this.state.search.toLowerCase()))
+        this.setState({results:searchResults})
         // this.setState({search:this.state.search});
       };
 
