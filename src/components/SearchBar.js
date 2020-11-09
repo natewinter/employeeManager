@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchForm(props) {
+function Searchbar(props) {
   return (
     <form>
       <div className="form-group">
@@ -18,9 +18,12 @@ function SearchForm(props) {
         <button onClick={props.handleFormSubmit} className="btn btn-primary">
           Search
         </button>
+        <button onClick={props.handleFilter} className="btn btn-primary">
+          filter!
+        </button>
       </div>
     </form>
   );
 }
 
-export default SearchForm;
+export default Searchbar;
